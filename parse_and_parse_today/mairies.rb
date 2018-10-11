@@ -14,7 +14,7 @@ def get_the_email_of_a_townhal_from_its_webpage
         puts a.text
 
 end
-puts get_the_email_of_a_townhal_from_its_webpage
+
 
 def get_all_the_urls_of_val_doise_townhalls
       my_array=[]
@@ -23,7 +23,9 @@ def get_all_the_urls_of_val_doise_townhalls
          puts node.text + " --> " + node['href']
 #         puts node['href']
       end
-#      return my_array
+
 
 end
 p get_all_the_urls_of_val_doise_townhalls
+puts ''
+puts get_the_email_of_a_townhal_from_its_webpage
