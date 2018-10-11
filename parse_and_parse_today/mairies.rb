@@ -17,14 +17,22 @@ end
 
 
 def get_all_the_urls_of_val_doise_townhalls
-      my_array=[]
+      my_hash = Hash.new
       doc = Nokogiri::HTML(open("http://annuaire-des-mairies.com/val-d-oise.html"))
+      i = 0
+      j = 0
       doc.xpath('//p/a').each do |node|
-         puts node.text + " --> " + node['href']
+
+#         my_hash[i] = {name: "#{node.text}", value: "#{node['href']}"}
+         my_hash[i]=[{ville: "#{node.text}", url:"#{node['href']}"}]
+#     my_hash{:value}  <<  node['href']
 #         puts node['href']
+          i += 1
+          j += 1
       end
-
-
+      my_hash.each do |i|
+        puts my_hash[i]
+      end
 end
 p get_all_the_urls_of_val_doise_townhalls
 puts ''
