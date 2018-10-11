@@ -10,8 +10,8 @@ def  crypto_name
 #        /html/body/div[2]/div/div[1]/div[2]/div[3]/div[2]/div/table/tbody/tr[4]/td[2]/a
          array_1 <<  node["data-sort"]
      end
-     array_1
 
+     array_1
 end
 
 
