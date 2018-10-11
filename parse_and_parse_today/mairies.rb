@@ -24,14 +24,12 @@ def get_all_the_urls_of_val_doise_townhalls
       doc.xpath('//p/a').each do |node|
 
 #         my_hash[i] = {name: "#{node.text}", value: "#{node['href']}"}
-         my_hash[i]=[{ville: "#{node.text}", url:"#{node['href']}"}]
-#     my_hash{:value}  <<  node['href']
-#         puts node['href']
+         my_hash[i]=[ville: "#{node.text}" ,url:"#{node['href']}"]
           i += 1
           j += 1
       end
       my_hash.each do |i|
-        puts my_hash[i]
+        print my_hash[i]
       end
 end
 p get_all_the_urls_of_val_doise_townhalls
