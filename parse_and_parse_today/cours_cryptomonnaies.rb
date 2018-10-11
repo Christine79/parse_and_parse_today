@@ -1,5 +1,6 @@
+https://coinmarketcap.com/all/views/all/
 
-require 'rubygems'
+equire 'rubygems'
 require 'nokogiri'
 require 'open-uri'
 
@@ -23,7 +24,7 @@ def get_all_the_urls_of_val_doise_townhalls
          puts node.text + " --> " + node['href']
 #         puts node['href']
       end
-#      return my_array
+      return my_array
 
 end
 p get_all_the_urls_of_val_doise_townhalls
